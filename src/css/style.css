@@ -1,0 +1,113 @@
+html {
+    font-size: 62.5%;
+}
+body{
+   background:url(../images/background.jpg) center center no-repeat;
+   background-attachment: fixed;
+   padding: 50px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.search-container .title {
+    font-size: 5rem;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.search-container input.search {
+    width: 50rem;
+    border-radius: 1.5rem;
+    height: 4.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+    margin-bottom: 70px;
+}
+
+main.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "six-strings-guitar seven-strings-guitar small-guitar"
+                         "programming-javascript programming-react programming-typescript"
+                         "music-samba music-instrumental music-frevo"
+                         "languages-english languages-spanish languages-german";
+    gap: 60px;
+    max-width: 1800px;
+    place-items: center;
+}
+main.main-container .configurations{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 450px;
+    background-color: var(--background-color);
+    border-radius: 1rem;
+    width: 500px;
+    padding: 15px;
+}
+main.main-container h3{
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-title);
+}
+main.main-container img.images{
+    width: 100%;
+    height: 85%;
+    border-radius: 1rem;
+    transition: 0.6s ease-in-out;
+    object-fit: cover;
+}
+main.main-container img.images:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #6667a0;
+    filter: grayscale(100%);
+}
+.six-strings-guitar{
+    grid-area: six-strings-guitar;
+}
+.seven-strings-guitar{
+    grid-area: seven-strings-guitar;
+}
+.small-guitar{
+    grid-area: small-guitar;
+}
+
+.programming-javascript{
+    grid-area: programming-javascript;
+}
+.programming-react{
+    grid-area: programming-react;
+}
+.programming-typescript{
+    grid-area: programming-typescript;
+}
+.music-samba{
+    grid-area: music-samba;
+}
+.music-instrumental{
+    grid-area: music-instrumental;
+}
+.music-frevo{
+    grid-area: music-frevo;
+}
+.languages-english{
+    grid-area: languages-english;
+}
+.languages-spanish{
+    grid-area: languages-spanish;
+}
+.languages-german{
+    grid-area: languages-german;
+}

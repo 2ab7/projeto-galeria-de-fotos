@@ -1,0 +1,84 @@
+@media (max-width:1024px){
+    main.main-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "six-strings-guitar seven-strings-guitar"
+        "small-guitar programming-javascript"
+        "programming-react programming-typescript"
+        "music-samba music-instrumental"
+        "music-frevo languages-english"
+        "languages-spanish languages-german";
+        justify-content: center;
+    }
+    .search-container input.search{
+        margin-bottom: 3.5rem;
+    }
+    main.main-container .configurations{
+        width: 375px;
+    }
+}
+@media(max-width:768px) {
+    .search-container .title{
+        font-size: 4.5rem;
+        text-align: center;
+    }
+    main.main-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "six-strings-guitar"
+            "seven-strings-guitar"
+            "small-guitar"
+            "programming-javascript"
+            "programming-react"
+            "programming-typescript"
+            "music-samba"
+            "music-instrumental"
+            "music-frevo"
+            "languages-english"
+            "languages-spanish"
+            "languages-german";
+            justify-content: center;
+    }
+    main.main-container .configurations{
+        width: 500px;
+    }
+}
+@media(max-width:425px){
+    main.main-container{
+        display:grid;
+        justify-content: center;
+    }
+    .search-container .title{
+        font-size: 3.5rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .search-container input.search{
+        width: 35rem;
+        margin-top: 4rem;
+    }
+    main.main-container .configurations{
+        width: 300px;
+        height: 350px;
+    }
+}
+@media(max-width:375px){
+    .search-container .title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .search-container input.search{
+        width: 30rem;
+    }
+    main.main-container .configurations{
+        width: 280px;
+    }
+}
+@media(max-width:320px){
+    .search-container input.search{
+        width: 25rem;
+    }
+    main.main-container .configurations{
+        width: 220px;
+    }
+}
